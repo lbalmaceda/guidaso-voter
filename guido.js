@@ -2,6 +2,13 @@ const request = require('request');
 const faker = require('faker');
 faker.locale = 'es';
 
+
+//Settings
+const maxWaitTime = 200000; //milliseconds
+const minWaitTime = 30000;  //milliseconds
+//End settings
+
+//Code
 (function loop() {
 
   var randomEmail = function(){
@@ -48,8 +55,7 @@ var voteForGuido = function(){
    });
 }
 
-
-  var rand = Math.round(Math.random() * (140000 - 15000)) + 15000;
+  var rand = Math.round(Math.random() * (maxWaitTime - minWaitTime)) + minWaitTime;
   setTimeout(function() {
           voteForGuido();
           loop();  
