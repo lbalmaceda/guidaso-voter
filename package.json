@@ -1,0 +1,20 @@
+{
+  "name": "guido-voter",
+  "version": "0.1.0",
+  "description": "An email form voter for my friend :3",
+  "main": "guido.js",
+  "scripts": {
+    "start": "node guido.js"
+  },
+  "dependencies": {
+  },
+  "engines": {
+    "node": "8.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lbalmaceda/guidaso-voter"
+  },
+  "author": "Luciano Balmaceda",
+  "license": "MIT"
+}
