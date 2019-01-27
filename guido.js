@@ -151,6 +151,10 @@ var maxFailures = 10;
       }
     };
     request(options, function (error, response, body) {
+      if (error){
+        console.log('res > ERROR! ', error);
+        return;
+      }
       console.log('res > statusCode:', response && response.statusCode);
       body = JSON.parse(body);
       if (body && !body.success) {
