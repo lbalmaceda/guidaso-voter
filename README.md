@@ -105,7 +105,7 @@ Node and NPM
 ## Running
 
 ### Settings
-You can change the minimum and maximum wait time in the `guido.js` file, passing a number of milliseconds.
+You can change the delay between each request in the `guido.js` file, passing a number of milliseconds to the properties `minWaitTime` and `maxWaitTime`. You can also set the number of failures tolerated before the script stops itself by changing the `maxFailures` variable.
 
 ### Execute
 
